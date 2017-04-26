@@ -1,7 +1,8 @@
 # Comprehensive mapping of HIV-1 escape from a broadly neutralizing antibody
 
 ## Authors
-Adam Dingens, Hugh Haddox, Julie Overbaugh, Jesse Bloom
+Adam Dingens, Hugh Haddox, Julie Overbaugh, Jesse Bloom.
+
 We are performing mutational antigenic profiling the bnAb PGT151 using the BF520 mutant Env library.
 Adam performed the experiments and analyzed the data. 
 
