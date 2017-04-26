@@ -1,0 +1,287 @@
+2017-04-25 15:19:14,504 - INFO - Beginning execution of dms_barcodedsubamplicons in directory /fh/fast/bloom_j/computational_notebooks/adingens/2017/BF520_MAP_PGT151
+
+2017-04-25 15:19:14,504 - INFO - Progress will be logged to ./counts//mut-DNA_3_.log
+2017-04-25 15:19:15,357 - INFO - Version information for dms_tools and associated packages.
+	Time and date: Tue Apr 25 15:19:14 2017
+	Platform: Linux-3.13.0-57-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 2.7.6 (default, Jun 22 2015, 17:58:13)  [GCC 4.8.2]
+	dms_tools version: 1.2.dev1
+	Bio version: 1.68
+	numpy version: 1.11.2
+	scipy version: 0.18.1
+	matplotlib version: 1.5.3
+	cython version: 0.25.2
+	pystan version: 2.12.0.0
+	weblogolib version: 3.4
+	PyPDF2 version: 1.26.0
+	pandas version: 0.19.1
+
+2017-04-25 15:19:15,358 - INFO - Parsed the following arguments:
+	minreadconcurrence = 0.51
+	maxmuts = 4
+	maxlowqfrac = 0.075
+	r1files = ['FASTQ_files/mut-DNA_3_1.fastq']
+	minreadidentity = 0.9
+	purgefrac = 0
+	R1trimlength = 205
+	R1_is_antisense = False
+	r2files = ['FASTQ_files/mut-DNA_3_2.fastq']
+	alignspecs = [(88, 417, 40, 39), (418, 753, 39, 35), (754, 1092, 36, 39), (1093, 1447, 35, 29), (1407, 1758, 35, 32), (1759, 2097, 30, 36), (2098, 2433, 39, 35)]
+	R2trimlength = 212
+	maxreadtrim = 3
+	barcodeinfo = False
+	chartype = codon
+	barcodelength = 8
+	minreadsperbarcode = 2
+	minq = 15
+	outprefix = ./counts//mut-DNA_3_
+	refseq = BF520c2-Env.fasta
+	purgereadfrac = 0
+	seed = 1
+
+2017-04-25 15:19:15,386 - INFO - Read a reference sequence of 853 codons from BF520c2-Env.fasta
+
+2017-04-25 15:19:15,386 - INFO - Now parsing reads from the following:
+	r1files: FASTQ_files/mut-DNA_3_1.fastq
+	r2files: FASTQ_files/mut-DNA_3_2.fastq
+2017-04-25 15:19:16,443 - INFO - Reads parsed so far: 100000
+2017-04-25 15:19:17,524 - INFO - Reads parsed so far: 200000
+2017-04-25 15:19:18,544 - INFO - Reads parsed so far: 300000
+2017-04-25 15:19:19,620 - INFO - Reads parsed so far: 400000
+2017-04-25 15:19:20,710 - INFO - Reads parsed so far: 500000
+2017-04-25 15:19:21,802 - INFO - Reads parsed so far: 600000
+2017-04-25 15:19:22,942 - INFO - Reads parsed so far: 700000
+2017-04-25 15:19:24,103 - INFO - Reads parsed so far: 800000
+2017-04-25 15:19:25,309 - INFO - Reads parsed so far: 900000
+2017-04-25 15:19:26,307 - INFO - Reads parsed so far: 1000000
+2017-04-25 15:19:27,303 - INFO - Reads parsed so far: 1100000
+2017-04-25 15:19:28,548 - INFO - Reads parsed so far: 1200000
+2017-04-25 15:19:29,717 - INFO - Reads parsed so far: 1300000
+2017-04-25 15:19:30,710 - INFO - Reads parsed so far: 1400000
+2017-04-25 15:19:32,058 - INFO - Reads parsed so far: 1500000
+2017-04-25 15:19:33,039 - INFO - Reads parsed so far: 1600000
+2017-04-25 15:19:34,032 - INFO - Reads parsed so far: 1700000
+2017-04-25 15:19:35,022 - INFO - Reads parsed so far: 1800000
+2017-04-25 15:19:36,011 - INFO - Reads parsed so far: 1900000
+2017-04-25 15:19:37,468 - INFO - Reads parsed so far: 2000000
+2017-04-25 15:19:38,566 - INFO - Reads parsed so far: 2100000
+2017-04-25 15:19:39,536 - INFO - Reads parsed so far: 2200000
+2017-04-25 15:19:40,519 - INFO - Reads parsed so far: 2300000
+2017-04-25 15:19:41,507 - INFO - Reads parsed so far: 2400000
+2017-04-25 15:19:42,498 - INFO - Reads parsed so far: 2500000
+2017-04-25 15:19:43,481 - INFO - Reads parsed so far: 2600000
+2017-04-25 15:19:45,252 - INFO - Reads parsed so far: 2700000
+2017-04-25 15:19:46,239 - INFO - Reads parsed so far: 2800000
+2017-04-25 15:19:47,244 - INFO - Reads parsed so far: 2900000
+2017-04-25 15:19:48,211 - INFO - Reads parsed so far: 3000000
+2017-04-25 15:19:49,198 - INFO - Reads parsed so far: 3100000
+2017-04-25 15:19:50,190 - INFO - Reads parsed so far: 3200000
+2017-04-25 15:19:51,170 - INFO - Reads parsed so far: 3300000
+2017-04-25 15:19:52,315 - INFO - Reads parsed so far: 3400000
+2017-04-25 15:19:54,305 - INFO - Reads parsed so far: 3500000
+2017-04-25 15:19:55,298 - INFO - Reads parsed so far: 3600000
+2017-04-25 15:19:56,292 - INFO - Reads parsed so far: 3700000
+2017-04-25 15:19:57,280 - INFO - Reads parsed so far: 3800000
+2017-04-25 15:19:58,268 - INFO - Reads parsed so far: 3900000
+2017-04-25 15:19:59,251 - INFO - Reads parsed so far: 4000000
+2017-04-25 15:20:00,239 - INFO - Reads parsed so far: 4100000
+2017-04-25 15:20:01,220 - INFO - Reads parsed so far: 4200000
+2017-04-25 15:20:02,212 - INFO - Reads parsed so far: 4300000
+2017-04-25 15:20:03,192 - INFO - Reads parsed so far: 4400000
+2017-04-25 15:20:04,168 - INFO - Reads parsed so far: 4500000
+2017-04-25 15:20:06,463 - INFO - Reads parsed so far: 4600000
+2017-04-25 15:20:07,442 - INFO - Reads parsed so far: 4700000
+2017-04-25 15:20:08,447 - INFO - Reads parsed so far: 4800000
+2017-04-25 15:20:09,426 - INFO - Reads parsed so far: 4900000
+2017-04-25 15:20:10,617 - INFO - Reads parsed so far: 5000000
+2017-04-25 15:20:11,611 - INFO - Reads parsed so far: 5100000
+2017-04-25 15:20:12,593 - INFO - Reads parsed so far: 5200000
+2017-04-25 15:20:13,572 - INFO - Reads parsed so far: 5300000
+2017-04-25 15:20:14,564 - INFO - Reads parsed so far: 5400000
+2017-04-25 15:20:15,621 - INFO - Reads parsed so far: 5500000
+2017-04-25 15:20:16,619 - INFO - Reads parsed so far: 5600000
+2017-04-25 15:20:17,599 - INFO - Reads parsed so far: 5700000
+2017-04-25 15:20:18,578 - INFO - Reads parsed so far: 5800000
+2017-04-25 15:20:19,573 - INFO - Reads parsed so far: 5900000
+2017-04-25 15:20:20,615 - INFO - Reads parsed so far: 6000000
+2017-04-25 15:20:23,175 - INFO - Reads parsed so far: 6100000
+2017-04-25 15:20:24,154 - INFO - Reads parsed so far: 6200000
+2017-04-25 15:20:25,144 - INFO - Reads parsed so far: 6300000
+2017-04-25 15:20:26,137 - INFO - Reads parsed so far: 6400000
+2017-04-25 15:20:27,119 - INFO - Reads parsed so far: 6500000
+2017-04-25 15:20:28,103 - INFO - Reads parsed so far: 6600000
+2017-04-25 15:20:29,097 - INFO - Reads parsed so far: 6700000
+2017-04-25 15:20:30,078 - INFO - Reads parsed so far: 6800000
+2017-04-25 15:20:31,073 - INFO - Reads parsed so far: 6900000
+2017-04-25 15:20:32,115 - INFO - Reads parsed so far: 7000000
+2017-04-25 15:20:33,108 - INFO - Reads parsed so far: 7100000
+2017-04-25 15:20:34,088 - INFO - Reads parsed so far: 7200000
+2017-04-25 15:20:35,072 - INFO - Reads parsed so far: 7300000
+2017-04-25 15:20:36,062 - INFO - Reads parsed so far: 7400000
+2017-04-25 15:20:37,043 - INFO - Reads parsed so far: 7500000
+2017-04-25 15:20:38,022 - INFO - Reads parsed so far: 7600000
+2017-04-25 15:20:39,010 - INFO - Reads parsed so far: 7700000
+2017-04-25 15:20:39,989 - INFO - Reads parsed so far: 7800000
+2017-04-25 15:20:40,973 - INFO - Reads parsed so far: 7900000
+2017-04-25 15:20:41,962 - INFO - Reads parsed so far: 8000000
+2017-04-25 15:20:42,945 - INFO - Reads parsed so far: 8100000
+2017-04-25 15:20:46,359 - INFO - Reads parsed so far: 8200000
+2017-04-25 15:20:47,347 - INFO - Reads parsed so far: 8300000
+2017-04-25 15:20:48,333 - INFO - Reads parsed so far: 8400000
+2017-04-25 15:20:49,320 - INFO - Reads parsed so far: 8500000
+2017-04-25 15:20:50,305 - INFO - Reads parsed so far: 8600000
+2017-04-25 15:20:51,283 - INFO - Reads parsed so far: 8700000
+2017-04-25 15:20:52,377 - INFO - Reads parsed so far: 8800000
+2017-04-25 15:20:53,356 - INFO - Reads parsed so far: 8900000
+2017-04-25 15:20:54,353 - INFO - Reads parsed so far: 9000000
+2017-04-25 15:20:55,341 - INFO - Reads parsed so far: 9100000
+2017-04-25 15:20:56,324 - INFO - Reads parsed so far: 9200000
+2017-04-25 15:20:57,303 - INFO - Reads parsed so far: 9300000
+2017-04-25 15:20:58,289 - INFO - Reads parsed so far: 9400000
+2017-04-25 15:20:59,275 - INFO - Reads parsed so far: 9500000
+2017-04-25 15:21:00,270 - INFO - Reads parsed so far: 9600000
+2017-04-25 15:21:01,249 - INFO - Reads parsed so far: 9700000
+2017-04-25 15:21:02,230 - INFO - Reads parsed so far: 9800000
+2017-04-25 15:21:03,220 - INFO - Reads parsed so far: 9900000
+2017-04-25 15:21:04,200 - INFO - Reads parsed so far: 10000000
+2017-04-25 15:21:05,197 - INFO - Reads parsed so far: 10100000
+2017-04-25 15:21:06,196 - INFO - Reads parsed so far: 10200000
+2017-04-25 15:21:07,199 - INFO - Reads parsed so far: 10300000
+2017-04-25 15:21:08,195 - INFO - Reads parsed so far: 10400000
+2017-04-25 15:21:09,188 - INFO - Reads parsed so far: 10500000
+2017-04-25 15:21:10,190 - INFO - Reads parsed so far: 10600000
+2017-04-25 15:21:11,197 - INFO - Reads parsed so far: 10700000
+2017-04-25 15:21:12,204 - INFO - Reads parsed so far: 10800000
+2017-04-25 15:21:13,211 - INFO - Reads parsed so far: 10900000
+2017-04-25 15:21:17,456 - INFO - Reads parsed so far: 11000000
+2017-04-25 15:21:18,437 - INFO - Reads parsed so far: 11100000
+2017-04-25 15:21:19,447 - INFO - Reads parsed so far: 11200000
+2017-04-25 15:21:20,463 - INFO - Reads parsed so far: 11300000
+2017-04-25 15:21:21,552 - INFO - Reads parsed so far: 11400000
+2017-04-25 15:21:22,565 - INFO - Reads parsed so far: 11500000
+2017-04-25 15:21:23,565 - INFO - Reads parsed so far: 11600000
+2017-04-25 15:21:24,575 - INFO - Reads parsed so far: 11700000
+2017-04-25 15:21:25,576 - INFO - Reads parsed so far: 11800000
+2017-04-25 15:21:26,590 - INFO - Reads parsed so far: 11900000
+2017-04-25 15:21:27,595 - INFO - Reads parsed so far: 12000000
+2017-04-25 15:21:28,601 - INFO - Reads parsed so far: 12100000
+2017-04-25 15:21:28,920 - INFO - Finished parsing all 12132142 reads; ended up with 5308142 unique barcodes.
+
+2017-04-25 15:21:28,925 - INFO - Now examining the 5308142 barcodes to see if reads meet criteria for retention
+2017-04-25 15:21:31,718 - INFO - Barcodes examined so far: 100000
+2017-04-25 15:21:34,280 - INFO - Barcodes examined so far: 200000
+2017-04-25 15:21:37,058 - INFO - Barcodes examined so far: 300000
+2017-04-25 15:21:39,519 - INFO - Barcodes examined so far: 400000
+2017-04-25 15:21:41,900 - INFO - Barcodes examined so far: 500000
+2017-04-25 15:21:44,872 - INFO - Barcodes examined so far: 600000
+2017-04-25 15:21:47,561 - INFO - Barcodes examined so far: 700000
+2017-04-25 15:21:50,068 - INFO - Barcodes examined so far: 800000
+2017-04-25 15:21:52,687 - INFO - Barcodes examined so far: 900000
+2017-04-25 15:21:55,418 - INFO - Barcodes examined so far: 1000000
+2017-04-25 15:21:58,015 - INFO - Barcodes examined so far: 1100000
+2017-04-25 15:22:00,489 - INFO - Barcodes examined so far: 1200000
+2017-04-25 15:22:03,167 - INFO - Barcodes examined so far: 1300000
+2017-04-25 15:22:05,856 - INFO - Barcodes examined so far: 1400000
+2017-04-25 15:22:08,298 - INFO - Barcodes examined so far: 1500000
+2017-04-25 15:22:10,759 - INFO - Barcodes examined so far: 1600000
+2017-04-25 15:22:13,761 - INFO - Barcodes examined so far: 1700000
+2017-04-25 15:22:16,529 - INFO - Barcodes examined so far: 1800000
+2017-04-25 15:22:18,947 - INFO - Barcodes examined so far: 1900000
+2017-04-25 15:22:21,874 - INFO - Barcodes examined so far: 2000000
+2017-04-25 15:22:24,776 - INFO - Barcodes examined so far: 2100000
+2017-04-25 15:22:27,251 - INFO - Barcodes examined so far: 2200000
+2017-04-25 15:22:29,798 - INFO - Barcodes examined so far: 2300000
+2017-04-25 15:22:32,616 - INFO - Barcodes examined so far: 2400000
+2017-04-25 15:22:35,289 - INFO - Barcodes examined so far: 2500000
+2017-04-25 15:22:37,715 - INFO - Barcodes examined so far: 2600000
+2017-04-25 15:22:40,574 - INFO - Barcodes examined so far: 2700000
+2017-04-25 15:22:43,516 - INFO - Barcodes examined so far: 2800000
+2017-04-25 15:22:46,014 - INFO - Barcodes examined so far: 2900000
+2017-04-25 15:22:48,574 - INFO - Barcodes examined so far: 3000000
+2017-04-25 15:22:51,376 - INFO - Barcodes examined so far: 3100000
+2017-04-25 15:22:54,074 - INFO - Barcodes examined so far: 3200000
+2017-04-25 15:22:56,561 - INFO - Barcodes examined so far: 3300000
+2017-04-25 15:22:59,184 - INFO - Barcodes examined so far: 3400000
+2017-04-25 15:23:01,814 - INFO - Barcodes examined so far: 3500000
+2017-04-25 15:23:04,449 - INFO - Barcodes examined so far: 3600000
+2017-04-25 15:23:07,000 - INFO - Barcodes examined so far: 3700000
+2017-04-25 15:23:10,016 - INFO - Barcodes examined so far: 3800000
+2017-04-25 15:23:13,171 - INFO - Barcodes examined so far: 3900000
+2017-04-25 15:23:15,998 - INFO - Barcodes examined so far: 4000000
+2017-04-25 15:23:19,914 - INFO - Barcodes examined so far: 4100000
+2017-04-25 15:23:23,643 - INFO - Barcodes examined so far: 4200000
+2017-04-25 15:23:28,326 - INFO - Barcodes examined so far: 4300000
+2017-04-25 15:23:33,293 - INFO - Barcodes examined so far: 4400000
+2017-04-25 15:23:39,758 - INFO - Barcodes examined so far: 4500000
+2017-04-25 15:23:44,895 - INFO - Barcodes examined so far: 4600000
+2017-04-25 15:23:52,625 - INFO - Barcodes examined so far: 4700000
+2017-04-25 15:24:00,843 - INFO - Barcodes examined so far: 4800000
+2017-04-25 15:24:08,415 - INFO - Barcodes examined so far: 4900000
+2017-04-25 15:24:18,249 - INFO - Barcodes examined so far: 5000000
+2017-04-25 15:24:29,663 - INFO - Barcodes examined so far: 5100000
+2017-04-25 15:24:40,279 - INFO - Barcodes examined so far: 5200000
+2017-04-25 15:24:58,634 - INFO - Barcodes examined so far: 5300000
+2017-04-25 15:25:03,921 - INFO - Finished examining all 5308142 barcodes
+
+2017-04-25 15:25:03,921 - INFO - Writing the codon counts to ./counts//mut-DNA_3_counts.txt
+2017-04-25 15:25:03,959 - INFO - Here are the summary statistics (these are also being written to ./counts//mut-DNA_3_summarystats.txt):
+	total read pairs = 12132142
+	read pairs that fail Illumina filter = 0
+	low quality read pairs = 3030091
+	barcodes randomly purged = 0
+	discarded barcodes with 1 reads = 3277100
+	aligned barcodes with 2 reads = 933085
+	discarded barcodes with 2 reads = 8432
+	un-alignable barcodes with 2 reads = 130855
+	aligned barcodes with 3 reads = 505825
+	discarded barcodes with 3 reads = 5878
+	un-alignable barcodes with 3 reads = 19990
+	aligned barcodes with 4 reads = 223326
+	discarded barcodes with 4 reads = 3772
+	un-alignable barcodes with 4 reads = 8080
+	aligned barcodes with 5 reads = 94404
+	discarded barcodes with 5 reads = 2176
+	un-alignable barcodes with 5 reads = 3634
+	aligned barcodes with 6 reads = 42262
+	discarded barcodes with 6 reads = 1287
+	un-alignable barcodes with 6 reads = 1683
+	aligned barcodes with 7 reads = 20636
+	discarded barcodes with 7 reads = 749
+	un-alignable barcodes with 7 reads = 929
+	aligned barcodes with 8 reads = 10853
+	discarded barcodes with 8 reads = 460
+	un-alignable barcodes with 8 reads = 523
+	aligned barcodes with 9 reads = 5623
+	discarded barcodes with 9 reads = 278
+	un-alignable barcodes with 9 reads = 281
+	aligned barcodes with 10 reads = 2829
+	discarded barcodes with 10 reads = 164
+	un-alignable barcodes with 10 reads = 156
+	aligned barcodes with 11 reads = 1382
+	discarded barcodes with 11 reads = 94
+	un-alignable barcodes with 11 reads = 78
+	aligned barcodes with 12 reads = 667
+	discarded barcodes with 12 reads = 48
+	un-alignable barcodes with 12 reads = 32
+	aligned barcodes with 13 reads = 278
+	discarded barcodes with 13 reads = 27
+	un-alignable barcodes with 13 reads = 14
+	aligned barcodes with 14 reads = 123
+	discarded barcodes with 14 reads = 12
+	un-alignable barcodes with 14 reads = 4
+	aligned barcodes with 15 reads = 60
+	discarded barcodes with 15 reads = 6
+	un-alignable barcodes with 15 reads = 1
+	aligned barcodes with 16 reads = 27
+	discarded barcodes with 16 reads = 4
+	aligned barcodes with 17 reads = 4
+	discarded barcodes with 17 reads = 1
+	aligned barcodes with 18 reads = 1
+	un-alignable barcodes with 18 reads = 1
+	aligned barcodes with 19 reads = 3
+	discarded barcodes with 19 reads = 1
+	aligned barcodes with 20 reads = 1
+	discarded barcodes with 22 reads = 1
+	aligned barcodes with 23 reads = 1
+	aligned barcodes with 26 reads = 1
+2017-04-25 15:25:03,960 - INFO - Successful completion of dms_barcodedsubamplicons at Tue Apr 25 15:25:03 2017
